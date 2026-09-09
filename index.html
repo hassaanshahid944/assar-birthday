@@ -10,501 +10,488 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap');
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    -webkit-tap-highlight-color:transparent;
+margin:0;
+padding:0;
+box-sizing:border-box;
+-webkit-tap-highlight-color:transparent;
 }
 
 html,body{
-    width:100%;
-    height:100%;
-    overflow:hidden;
+width:100%;
+height:100%;
+overflow:hidden;
 }
 
 body{
-    font-family:'Montserrat',sans-serif;
-    color:white;
-    background:
-      radial-gradient(circle at 50% 20%,#3b052d 0%,transparent 32%),
-      radial-gradient(circle at 10% 90%,#28004c 0%,transparent 35%),
-      linear-gradient(145deg,#02010a,#100016 50%,#02020c);
+font-family:'Montserrat',sans-serif;
+color:white;
+background:
+radial-gradient(circle at 50% 20%,#3b052d 0%,transparent 32%),
+radial-gradient(circle at 10% 90%,#28004c 0%,transparent 35%),
+linear-gradient(145deg,#02010a,#100016 50%,#02020c);
 }
 
 /* BACKGROUND */
 
 .bg{
-    position:fixed;
-    inset:0;
-    overflow:hidden;
-    pointer-events:none;
+position:fixed;
+inset:0;
+overflow:hidden;
+pointer-events:none;
 }
 
 .bg:before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:
-      radial-gradient(circle,rgba(255,255,255,.9) 1px,transparent 1px);
-    background-size:80px 80px;
-    opacity:.18;
+content:"";
+position:absolute;
+inset:0;
+background:
+radial-gradient(circle,rgba(255,255,255,.9) 1px,transparent 1px);
+background-size:80px 80px;
+opacity:.18;
 }
 
 .glow{
-    position:absolute;
-    border-radius:50%;
-    filter:blur(90px);
-    opacity:.35;
+position:absolute;
+border-radius:50%;
+filter:blur(90px);
+opacity:.35;
 }
 
 .g1{
-    width:350px;
-    height:350px;
-    background:#ff0066;
-    top:-150px;
-    left:-120px;
+width:350px;
+height:350px;
+background:#ff0066;
+top:-150px;
+left:-120px;
 }
 
 .g2{
-    width:300px;
-    height:300px;
-    background:#7d00ff;
-    bottom:-120px;
-    right:-100px;
+width:300px;
+height:300px;
+background:#7d00ff;
+bottom:-120px;
+right:-100px;
 }
 
 /* FLOATING HEARTS */
 
 .float{
-    position:absolute;
-    color:#ff4d96;
-    text-shadow:0 0 15px #ff176f;
-    opacity:.45;
-    animation:floatUp linear infinite;
+position:absolute;
+color:#ff4d96;
+text-shadow:0 0 15px #ff176f;
+opacity:.45;
+animation:floatUp linear infinite;
 }
 
 @keyframes floatUp{
-    from{
-        transform:translateY(110vh);
-    }
-    to{
-        transform:translateY(-20vh);
-    }
+from{transform:translateY(110vh);}
+to{transform:translateY(-20vh);}
 }
 
-/* SCREENS */
+/* SCREEN */
 
 .screen{
-    position:absolute;
-    inset:0;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:20px;
-    text-align:center;
-    transition:.8s ease;
-    z-index:5;
+position:absolute;
+inset:0;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:20px;
+text-align:center;
+transition:.8s ease;
+z-index:5;
 }
 
 .hidden{
-    opacity:0!important;
-    pointer-events:none!important;
-    transform:scale(.92);
+opacity:0!important;
+pointer-events:none!important;
+transform:scale(.92);
 }
 
-/* CONTENT */
-
 .content{
-    width:100%;
-    max-width:650px;
+width:100%;
+max-width:650px;
 }
 
 /* TEXT */
 
 .label{
-    color:#ffabc9;
-    font-size:11px;
-    letter-spacing:5px;
-    text-transform:uppercase;
-    margin-bottom:15px;
+color:#ffabc9;
+font-size:11px;
+letter-spacing:5px;
+text-transform:uppercase;
+margin-bottom:15px;
 }
 
 h1{
-    font-family:'Cormorant Garamond',serif;
-    font-size:clamp(45px,12vw,75px);
-    line-height:.9;
-    letter-spacing:3px;
-    text-shadow:
-      0 0 10px #fff,
-      0 0 30px #ff267d;
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(45px,12vw,75px);
+line-height:.9;
+letter-spacing:3px;
+text-shadow:
+0 0 10px #fff,
+0 0 30px #ff267d;
 }
 
 .script{
-    font-family:'Great Vibes',cursive;
-    font-size:clamp(55px,15vw,100px);
-    color:#ffb3d2;
-    text-shadow:
-      0 0 8px #fff,
-      0 0 25px #ff237c,
-      0 0 55px #ff0066;
+font-family:'Great Vibes',cursive;
+font-size:clamp(55px,15vw,100px);
+color:#ffb3d2;
+text-shadow:
+0 0 8px #fff,
+0 0 25px #ff237c,
+0 0 55px #ff0066;
 }
 
-/* ===================================
-   GLOSSY HEART
-=================================== */
+/* GLOSSY HEART */
 
 .heartBox{
-    width:220px;
-    height:200px;
-    margin:0 auto 15px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    position:relative;
+width:220px;
+height:200px;
+margin:0 auto 15px;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
 }
 
 .heart{
-    width:145px;
-    height:145px;
-    position:relative;
-    transform:rotate(-45deg);
-    border-radius:22px;
-    background:
-      radial-gradient(
-        circle at 32% 25%,
-        #fff 0%,
-        #ffdce9 7%,
-        #ffb0cd 16%,
-        transparent 18%
-      ),
-      linear-gradient(
-        145deg,
-        #ffd0df 0%,
-        #ff91b7 22%,
-        #ff3c82 55%,
-        #d90058 100%
-      );
+width:145px;
+height:145px;
+position:relative;
+transform:rotate(-45deg);
+border-radius:22px;
 
-    box-shadow:
-      0 0 8px #fff,
-      0 0 20px #ff5b9d,
-      0 0 45px #ff0066,
-      0 0 90px rgba(255,0,100,.65);
+background:
+radial-gradient(
+circle at 32% 25%,
+#fff 0%,
+#ffdce9 7%,
+#ffb0cd 16%,
+transparent 18%
+),
+linear-gradient(
+145deg,
+#ffd0df 0%,
+#ff91b7 22%,
+#ff3c82 55%,
+#d90058 100%
+);
 
-    animation:heartBeat 1.8s ease-in-out infinite;
+box-shadow:
+0 0 8px #fff,
+0 0 20px #ff5b9d,
+0 0 45px #ff0066,
+0 0 90px rgba(255,0,100,.65);
+
+animation:heartBeat 1.8s ease-in-out infinite;
 }
 
 .heart:before,
 .heart:after{
-    content:"";
-    position:absolute;
-    width:145px;
-    height:145px;
-    border-radius:50%;
-    background:inherit;
+content:"";
+position:absolute;
+width:145px;
+height:145px;
+border-radius:50%;
+background:inherit;
 }
 
 .heart:before{
-    top:-72px;
-    left:0;
+top:-72px;
+left:0;
 }
 
 .heart:after{
-    top:0;
-    left:72px;
+top:0;
+left:72px;
 }
 
 .heartText{
-    position:absolute;
-    z-index:3;
-    transform:rotate(45deg);
-    width:200px;
-    left:-27px;
-    top:52px;
-    font-size:12px;
-    font-weight:700;
-    letter-spacing:3px;
-    text-shadow:0 0 10px white,0 0 20px #ff176f;
+position:absolute;
+z-index:3;
+transform:rotate(45deg);
+width:200px;
+left:-27px;
+top:52px;
+font-size:12px;
+font-weight:700;
+letter-spacing:3px;
+text-shadow:0 0 10px white,0 0 20px #ff176f;
 }
 
 @keyframes heartBeat{
-    0%,100%{
-        transform:rotate(-45deg) scale(1);
-    }
-    50%{
-        transform:rotate(-45deg) scale(1.08);
-    }
+0%,100%{
+transform:rotate(-45deg) scale(1);
+}
+50%{
+transform:rotate(-45deg) scale(1.08);
+}
 }
 
 /* BUTTON */
 
 .btn{
-    margin-top:25px;
-    padding:17px 45px;
-    border-radius:50px;
-    border:1px solid rgba(255,220,235,.9);
-    background:linear-gradient(
-      90deg,
-      #ff075e,
-      #ff388b,
-      #ff075e
-    );
-    color:white;
-    font-size:16px;
-    font-weight:600;
-    letter-spacing:1px;
-    box-shadow:
-      0 0 10px #ff4a98,
-      0 0 35px #ff0066,
-      inset 0 0 15px rgba(255,255,255,.3);
+margin-top:25px;
+padding:17px 45px;
+border-radius:50px;
+border:1px solid rgba(255,220,235,.9);
+background:linear-gradient(
+90deg,
+#ff075e,
+#ff388b,
+#ff075e
+);
+color:white;
+font-size:16px;
+font-weight:600;
+letter-spacing:1px;
+box-shadow:
+0 0 10px #ff4a98,
+0 0 35px #ff0066,
+inset 0 0 15px rgba(255,255,255,.3);
+cursor:pointer;
 }
 
-/* ===================================
-   GAME
-=================================== */
+/* GAME */
 
 .gameCard{
-    padding:30px 18px;
-    border-radius:28px;
+padding:30px 18px;
+border-radius:28px;
 
-    background:rgba(10,5,25,.55);
-    border:1px solid rgba(255,110,170,.5);
+background:rgba(10,5,25,.55);
+border:1px solid rgba(255,110,170,.5);
 
-    box-shadow:
-      0 0 30px rgba(255,0,100,.2),
-      inset 0 0 40px rgba(255,0,100,.05);
+box-shadow:
+0 0 30px rgba(255,0,100,.2),
+inset 0 0 40px rgba(255,0,100,.05);
 
-    backdrop-filter:blur(18px);
+backdrop-filter:blur(18px);
 }
 
 .gameTitle{
-    font-family:'Great Vibes',cursive;
-    color:#ffb5d2;
-    font-size:60px;
-    text-shadow:0 0 20px #ff176f;
+font-family:'Great Vibes',cursive;
+color:#ffb5d2;
+font-size:60px;
+text-shadow:0 0 20px #ff176f;
 }
 
 .instruction{
-    margin-top:5px;
-    font-size:11px;
-    letter-spacing:3px;
-    text-transform:uppercase;
+margin-top:5px;
+font-size:11px;
+letter-spacing:3px;
+text-transform:uppercase;
 }
 
 .arrowArea{
-    position:relative;
-    width:100%;
-    height:160px;
-    margin-top:20px;
+position:relative;
+width:100%;
+height:160px;
+margin-top:20px;
 }
 
 .track{
-    position:absolute;
-    left:40px;
-    right:65px;
-    top:80px;
-    height:2px;
-    background:linear-gradient(
-      90deg,
-      transparent,
-      #ff73ad,
-      #ff176f,
-      #ff73ad,
-      transparent
-    );
-    box-shadow:0 0 12px #ff176f;
+position:absolute;
+left:40px;
+right:65px;
+top:80px;
+height:2px;
+background:linear-gradient(
+90deg,
+transparent,
+#ff73ad,
+#ff176f,
+#ff73ad,
+transparent
+);
+box-shadow:0 0 12px #ff176f;
 }
 
 .dragArrow{
-    position:absolute;
-    left:10px;
-    top:50px;
-    width:70px;
-    height:60px;
+position:absolute;
+left:10px;
+top:50px;
+width:70px;
+height:60px;
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
+display:flex;
+align-items:center;
+justify-content:center;
 
-    font-size:48px;
-    z-index:4;
+font-size:48px;
+z-index:4;
 
-    cursor:grab;
-    touch-action:none;
+cursor:grab;
+touch-action:none;
 
-    filter:
-      drop-shadow(0 0 5px white)
-      drop-shadow(0 0 15px #ff176f);
+filter:
+drop-shadow(0 0 5px white)
+drop-shadow(0 0 15px #ff176f);
 }
 
 .target{
-    position:absolute;
-    right:-5px;
-    top:28px;
-    width:105px;
-    height:105px;
+position:absolute;
+right:-5px;
+top:28px;
+width:105px;
+height:105px;
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
+display:flex;
+align-items:center;
+justify-content:center;
 }
 
 .ring{
-    position:absolute;
-    width:105px;
-    height:105px;
-    border:1px solid rgba(255,70,150,.6);
-    border-radius:50%;
-    box-shadow:
-      0 0 15px #ff176f,
-      inset 0 0 20px rgba(255,0,100,.25);
-
-    animation:ring 2s infinite;
+position:absolute;
+width:105px;
+height:105px;
+border:1px solid rgba(255,70,150,.6);
+border-radius:50%;
+box-shadow:
+0 0 15px #ff176f,
+inset 0 0 20px rgba(255,0,100,.25);
+animation:ring 2s infinite;
 }
 
 .ring2{
-    width:75px;
-    height:75px;
-    animation-delay:.3s;
+width:75px;
+height:75px;
+animation-delay:.3s;
 }
 
 .targetHeart{
-    font-size:52px;
-    z-index:2;
-    filter:
-      drop-shadow(0 0 5px white)
-      drop-shadow(0 0 18px #ff176f)
-      drop-shadow(0 0 35px #ff0066);
+font-size:52px;
+z-index:2;
+filter:
+drop-shadow(0 0 5px white)
+drop-shadow(0 0 18px #ff176f)
+drop-shadow(0 0 35px #ff0066);
 }
 
 @keyframes ring{
-    0%,100%{
-        transform:scale(.9);
-        opacity:.5;
-    }
-    50%{
-        transform:scale(1.1);
-        opacity:1;
-    }
+0%,100%{
+transform:scale(.9);
+opacity:.5;
+}
+50%{
+transform:scale(1.1);
+opacity:1;
+}
 }
 
 .hint{
-    display:inline-block;
-    margin-top:10px;
-    padding:10px 20px;
-    border-radius:30px;
-    border:1px solid rgba(255,100,170,.3);
-    color:#ffafd0;
-    font-size:10px;
-    letter-spacing:2px;
+display:inline-block;
+margin-top:10px;
+padding:10px 20px;
+border-radius:30px;
+border:1px solid rgba(255,100,170,.3);
+color:#ffafd0;
+font-size:10px;
+letter-spacing:2px;
 }
 
-/* ===================================
-   FINAL
-=================================== */
+/* FINAL */
 
 .final{
-    overflow:auto;
-    align-items:flex-start;
+overflow:auto;
+align-items:flex-start;
 }
 
 .finalContent{
-    padding:30px 0;
+padding:30px 0;
 }
 
 .finalHeart{
-    transform:scale(.62);
-    margin:-20px auto -35px;
+transform:scale(.62);
+margin:-20px auto -35px;
 }
 
 .wish{
-    max-width:520px;
-    margin:20px auto;
-    padding:25px 20px;
+max-width:520px;
+margin:20px auto;
+padding:25px 20px;
 
-    border-radius:25px;
+border-radius:25px;
 
-    background:rgba(15,5,30,.6);
-    border:1px solid #ff438e;
+background:rgba(15,5,30,.6);
+border:1px solid #ff438e;
 
-    box-shadow:
-      0 0 25px rgba(255,0,100,.3),
-      inset 0 0 25px rgba(255,0,100,.05);
+box-shadow:
+0 0 25px rgba(255,0,100,.3),
+inset 0 0 25px rgba(255,0,100,.05);
 
-    backdrop-filter:blur(15px);
+backdrop-filter:blur(15px);
 }
 
 .wish p{
-    font-family:'Cormorant Garamond',serif;
-    font-size:21px;
-    line-height:1.55;
+font-family:'Cormorant Garamond',serif;
+font-size:21px;
+line-height:1.55;
 }
 
 .wish strong{
-    color:#ff9fc5;
+color:#ff9fc5;
 }
 
 .bottom{
-    color:#ff9fc5;
-    font-size:10px;
-    letter-spacing:3px;
-    text-transform:uppercase;
+color:#ff9fc5;
+font-size:10px;
+letter-spacing:3px;
+text-transform:uppercase;
 }
 
 /* MUSIC */
 
 .music{
-    position:fixed;
-    right:18px;
-    top:18px;
+position:fixed;
+right:18px;
+top:18px;
 
-    width:45px;
-    height:45px;
+width:45px;
+height:45px;
 
-    border-radius:50%;
-    border:1px solid rgba(255,120,180,.5);
+border-radius:50%;
+border:1px solid rgba(255,120,180,.5);
 
-    background:rgba(20,5,30,.7);
-    color:#ffafd0;
+background:rgba(20,5,30,.7);
+color:#ffafd0;
 
-    z-index:100;
+z-index:100;
 }
 
 /* FIREWORKS */
 
 #fireworks{
-    position:fixed;
-    inset:0;
-    width:100%;
-    height:100%;
-    pointer-events:none;
-    z-index:50;
+position:fixed;
+inset:0;
+width:100%;
+height:100%;
+pointer-events:none;
+z-index:50;
 }
-
-/* MOBILE */
 
 @media(max-width:500px){
 
-    .heartBox{
-        transform:scale(.85);
-        margin-top:-10px;
-    }
+.heartBox{
+transform:scale(.85);
+margin-top:-10px;
+}
 
-    .gameCard{
-        padding:25px 12px;
-    }
+.gameCard{
+padding:25px 12px;
+}
 
-    .gameTitle{
-        font-size:52px;
-    }
+.gameTitle{
+font-size:52px;
+}
 
-    .instruction{
-        font-size:9px;
-    }
+.instruction{
+font-size:9px;
+}
 
-    .wish p{
-        font-size:19px;
-    }
+.wish p{
+font-size:19px;
+}
 
 }
 </style>
@@ -513,188 +500,185 @@ h1{
 <body>
 
 <div class="bg">
-    <div class="glow g1"></div>
-    <div class="glow g2"></div>
+<div class="glow g1"></div>
+<div class="glow g2"></div>
 </div>
 
 <div id="floating"></div>
 
 <canvas id="fireworks"></canvas>
 
-<audio id="music" loop>
-    <source src="birthday.mp3" type="audio/mpeg">
+
+<!-- YOUR ACTUAL GITHUB FILE NAME -->
+<audio id="music" loop preload="auto">
+<source src="birthday.mp3 .mp3" type="audio/mpeg">
 </audio>
 
+
 <button class="music" onclick="toggleMusic()" id="musicBtn">
-    ♫
+♫
 </button>
 
 
-<!-- ================================
-     START SCREEN
-================================ -->
+<!-- START -->
 
 <section class="screen" id="start">
 
 <div class="content">
 
-    <div class="label">
-        A SPECIAL SURPRISE
-    </div>
+<div class="label">
+A SPECIAL SURPRISE
+</div>
 
-    <div class="heartBox">
+<div class="heartBox">
 
-        <div class="heart">
+<div class="heart">
 
-            <div class="heartText">
-                FOR YOU ❤️
-            </div>
+<div class="heartText">
+FOR YOU ❤️
+</div>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
-    <h1>
-        A Special
-    </h1>
+<h1>
+A Special
+</h1>
 
-    <div class="script">
-        Surprise
-    </div>
+<div class="script">
+Surprise
+</div>
 
-    <div style="
-        margin-top:15px;
-        font-family:'Cormorant Garamond';
-        font-size:21px;
-        letter-spacing:2px;
-    ">
-        Someone Special Deserves<br>
-        A Special Day ❤️
-    </div>
+<div style="
+margin-top:15px;
+font-family:'Cormorant Garamond';
+font-size:21px;
+letter-spacing:2px;
+">
+Someone Special Deserves<br>
+A Special Day ❤️
+</div>
 
-    <button class="btn" onclick="begin()">
-        Tap to Begin&nbsp;&nbsp; →
-    </button>
+<button class="btn" onclick="begin()">
+Tap to Begin&nbsp;&nbsp; →
+</button>
 
 </div>
 
 </section>
 
 
-<!-- ================================
-     ARROW GAME
-================================ -->
+<!-- GAME -->
 
 <section class="screen hidden" id="game">
 
 <div class="content">
 
-    <div class="gameCard">
+<div class="gameCard">
 
-        <div class="gameTitle">
-            Let's Begin... ♡
-        </div>
+<div class="gameTitle">
+Let's Begin... ♡
+</div>
 
-        <div class="instruction">
-            Drag the arrow towards the heart
-        </div>
+<div class="instruction">
+Drag the arrow towards the heart
+</div>
 
-        <div class="arrowArea">
+<div class="arrowArea">
 
-            <div class="track"></div>
+<div class="track"></div>
 
-            <div
-                class="dragArrow"
-                id="arrow">
-                🏹
-            </div>
+<div
+class="dragArrow"
+id="arrow">
+🏹
+</div>
 
-            <div class="target">
+<div class="target">
 
-                <div class="ring"></div>
-                <div class="ring ring2"></div>
+<div class="ring"></div>
+<div class="ring ring2"></div>
 
-                <div class="targetHeart">
-                    ❤️
-                </div>
+<div class="targetHeart">
+❤️
+</div>
 
-            </div>
+</div>
 
-        </div>
+</div>
 
-        <div class="hint">
-            PULL → AIM → RELEASE → MAKE IT HAPPEN ♡
-        </div>
+<div class="hint">
+PULL → AIM → RELEASE → MAKE IT HAPPEN ♡
+</div>
 
-    </div>
+</div>
 
 </div>
 
 </section>
 
 
-<!-- ================================
-     FINAL SCREEN
-================================ -->
+<!-- FINAL -->
 
 <section class="screen hidden final" id="final">
 
 <div class="content finalContent">
 
-    <div class="label">
-        TODAY IS ALL ABOUT YOU
-    </div>
+<div class="label">
+TODAY IS ALL ABOUT YOU
+</div>
 
-    <h1>
-        HAPPY BIRTHDAY
-    </h1>
+<h1>
+HAPPY BIRTHDAY
+</h1>
 
-    <div class="finalHeart">
+<div class="finalHeart">
 
-        <div class="heartBox">
+<div class="heartBox">
 
-            <div class="heart">
+<div class="heart">
 
-                <div class="heartText">
-                    ASSAR ❤️
-                </div>
+<div class="heartText">
+ASSAR ❤️
+</div>
 
-            </div>
+</div>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
-    <div class="script">
-        Assar Imam
-    </div>
+<div class="script">
+Assar Imam
+</div>
 
-    <div class="wish">
+<div class="wish">
 
-        <p>
+<p>
 
-        May your life always be filled with
-        <strong>happiness, success, love</strong>
-        and endless beautiful moments.
+May your life always be filled with
+<strong>happiness, success, love</strong>
+and endless beautiful moments.
 
-        <br><br>
+<br><br>
 
-        You deserve all the good things
-        in this world.
+You deserve all the good things
+in this world.
 
-        <br><br>
+<br><br>
 
-        <strong>
-            Stay Amazing Always ❤️
-        </strong>
+<strong>
+Stay Amazing Always ❤️
+</strong>
 
-        </p>
+</p>
 
-    </div>
+</div>
 
-    <div class="bottom">
-        🎂 &nbsp; Here's to an incredible year ahead &nbsp; 🎂
-    </div>
+<div class="bottom">
+🎂 Here's to an incredible year ahead 🎂
+</div>
 
 </div>
 
@@ -703,47 +687,45 @@ h1{
 
 <script>
 
-/* =================================
-   MUSIC
-================================= */
+/* MUSIC */
 
 const music=document.getElementById("music");
 const musicBtn=document.getElementById("musicBtn");
 
 function begin(){
 
-    document.getElementById("start")
-        .classList.add("hidden");
+document.getElementById("start")
+.classList.add("hidden");
 
-    document.getElementById("game")
-        .classList.remove("hidden");
+document.getElementById("game")
+.classList.remove("hidden");
 
-    music.volume=.75;
+music.volume=.75;
 
-    music.play().catch(()=>{});
+music.play().catch(()=>{
+console.log("Music could not start");
+});
 
 }
 
 function toggleMusic(){
 
-    if(music.paused){
+if(music.paused){
 
-        music.play();
-        musicBtn.innerHTML="♫";
+music.play();
+musicBtn.innerHTML="♫";
 
-    }else{
+}else{
 
-        music.pause();
-        musicBtn.innerHTML="🔇";
+music.pause();
+musicBtn.innerHTML="🔇";
 
-    }
+}
 
 }
 
 
-/* =================================
-   ARROW
-================================= */
+/* ARROW */
 
 const arrow=document.getElementById("arrow");
 const area=document.querySelector(".arrowArea");
@@ -753,134 +735,126 @@ let finished=false;
 
 arrow.addEventListener("pointerdown",e=>{
 
-    if(finished)return;
+if(finished)return;
 
-    dragging=true;
+dragging=true;
 
-    arrow.setPointerCapture(e.pointerId);
+arrow.setPointerCapture(e.pointerId);
 
 });
-
 
 arrow.addEventListener("pointermove",e=>{
 
-    if(!dragging || finished)return;
+if(!dragging || finished)return;
 
-    const rect=area.getBoundingClientRect();
+const rect=area.getBoundingClientRect();
 
-    let x=e.clientX-rect.left-35;
+let x=e.clientX-rect.left-35;
 
-    const min=5;
-    const max=rect.width-85;
+const min=5;
+const max=rect.width-85;
 
-    x=Math.max(min,Math.min(x,max));
+x=Math.max(min,Math.min(x,max));
 
-    arrow.style.left=x+"px";
+arrow.style.left=x+"px";
 
-    if(x>=max-5){
+if(x>=max-5){
 
-        finished=true;
-        dragging=false;
+finished=true;
+dragging=false;
 
-        arrow.style.left=max+"px";
+arrow.style.left=max+"px";
 
-        setTimeout(showBirthday,500);
+setTimeout(showBirthday,500);
 
-    }
+}
 
 });
-
 
 arrow.addEventListener("pointerup",()=>{
 
-    dragging=false;
+dragging=false;
 
 });
 
 
-/* =================================
-   BIRTHDAY REVEAL
-================================= */
+/* BIRTHDAY */
 
 function showBirthday(){
 
-    document.getElementById("game")
-        .classList.add("hidden");
+document.getElementById("game")
+.classList.add("hidden");
 
-    document.getElementById("final")
-        .classList.remove("hidden");
+document.getElementById("final")
+.classList.remove("hidden");
 
-    createFloating();
+createFloating();
 
-    setTimeout(()=>{
-        fireworks();
-    },300);
+setTimeout(()=>{
+fireworks();
+},300);
 
 }
 
 
-/* =================================
-   FLOATING HEARTS
-================================= */
+/* FLOATING HEARTS */
 
 function createFloating(){
 
-    const container=
-        document.getElementById("floating");
+const container=
+document.getElementById("floating");
 
-    const symbols=[
-        "♡","♥","✦","✧","❤"
-    ];
+const symbols=[
+"♡","♥","✦","✧","❤"
+];
 
-    for(let i=0;i<25;i++){
+for(let i=0;i<25;i++){
 
-        const el=
-            document.createElement("div");
+const el=
+document.createElement("div");
 
-        el.className="float";
+el.className="float";
 
-        el.innerHTML=
-            symbols[
-              Math.floor(
-                Math.random()*symbols.length
-              )
-            ];
+el.innerHTML=
+symbols[
+Math.floor(
+Math.random()*symbols.length
+)
+];
 
-        el.style.left=
-            Math.random()*100+"%";
+el.style.left=
+Math.random()*100+"%";
 
-        el.style.fontSize=
-            (10+Math.random()*20)+"px";
+el.style.fontSize=
+(10+Math.random()*20)+"px";
 
-        el.style.animationDuration=
-            (6+Math.random()*9)+"s";
+el.style.animationDuration=
+(6+Math.random()*9)+"s";
 
-        el.style.animationDelay=
-            Math.random()*6+"s";
+el.style.animationDelay=
+Math.random()*6+"s";
 
-        container.appendChild(el);
+container.appendChild(el);
 
-    }
+}
 
 }
 
 
-/* =================================
-   FIREWORKS
-================================= */
+/* FIREWORKS */
 
 const canvas=
-    document.getElementById("fireworks");
+document.getElementById("fireworks");
 
 const ctx=
-    canvas.getContext("2d");
+canvas.getContext("2d");
 
 let particles=[];
 
 function resize(){
 
-    canvas.width=window.innerWidth;
-    canvas.height=window.innerHeight;
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
 
 }
 
@@ -888,145 +862,141 @@ resize();
 
 window.addEventListener("resize",resize);
 
-
 const colors=[
-    "#ff176f",
-    "#ff72ae",
-    "#ffffff",
-    "#b56cff",
-    "#63d9ff",
-    "#ffd166"
+"#ff176f",
+"#ff72ae",
+"#ffffff",
+"#b56cff",
+"#63d9ff",
+"#ffd166"
 ];
-
 
 function createFirework(){
 
-    const x=
-        Math.random()*canvas.width;
+const x=
+Math.random()*canvas.width;
 
-    const y=
-        70+
-        Math.random()*canvas.height*.45;
+const y=
+70+
+Math.random()*canvas.height*.45;
 
-    const color=
-        colors[
-            Math.floor(
-                Math.random()*colors.length
-            )
-        ];
+const color=
+colors[
+Math.floor(
+Math.random()*colors.length
+)
+];
 
-    for(let i=0;i<75;i++){
+for(let i=0;i<75;i++){
 
-        const angle=
-            Math.random()*Math.PI*2;
+const angle=
+Math.random()*Math.PI*2;
 
-        const speed=
-            Math.random()*7+2;
+const speed=
+Math.random()*7+2;
 
-        particles.push({
+particles.push({
 
-            x:x,
-            y:y,
+x:x,
+y:y,
 
-            vx:
-                Math.cos(angle)*speed,
+vx:
+Math.cos(angle)*speed,
 
-            vy:
-                Math.sin(angle)*speed,
+vy:
+Math.sin(angle)*speed,
 
-            life:100,
+life:100,
 
-            size:
-                Math.random()*2.5+1,
+size:
+Math.random()*2.5+1,
 
-            color:color
+color:color
 
-        });
-
-    }
+});
 
 }
 
+}
 
 function animate(){
 
-    ctx.clearRect(
-        0,
-        0,
-        canvas.width,
-        canvas.height
-    );
+ctx.clearRect(
+0,
+0,
+canvas.width,
+canvas.height
+);
 
-    for(let i=particles.length-1;i>=0;i--){
+for(let i=particles.length-1;i>=0;i--){
 
-        const p=particles[i];
+const p=particles[i];
 
-        p.x+=p.vx;
-        p.y+=p.vy;
+p.x+=p.vx;
+p.y+=p.vy;
 
-        p.vx*=.985;
-        p.vy*=.985;
+p.vx*=.985;
+p.vy*=.985;
 
-        p.vy+=.045;
+p.vy+=.045;
 
-        p.life--;
+p.life--;
 
-        ctx.globalAlpha=
-            p.life/100;
+ctx.globalAlpha=
+p.life/100;
 
-        ctx.beginPath();
+ctx.beginPath();
 
-        ctx.arc(
-            p.x,
-            p.y,
-            p.size,
-            0,
-            Math.PI*2
-        );
+ctx.arc(
+p.x,
+p.y,
+p.size,
+0,
+Math.PI*2
+);
 
-        ctx.fillStyle=p.color;
+ctx.fillStyle=p.color;
 
-        ctx.shadowBlur=15;
-        ctx.shadowColor=p.color;
+ctx.shadowBlur=15;
+ctx.shadowColor=p.color;
 
-        ctx.fill();
+ctx.fill();
 
-        if(p.life<=0){
+if(p.life<=0){
 
-            particles.splice(i,1);
-
-        }
-
-    }
-
-    ctx.globalAlpha=1;
-
-    requestAnimationFrame(animate);
+particles.splice(i,1);
 
 }
 
+}
+
+ctx.globalAlpha=1;
+
+requestAnimationFrame(animate);
+
+}
 
 function fireworks(){
 
-    animate();
+animate();
 
-    createFirework();
+createFirework();
 
-    setInterval(()=>{
+setInterval(()=>{
 
-        createFirework();
+createFirework();
 
-        setTimeout(
-            createFirework,
-            400
-        );
+setTimeout(
+createFirework,
+400
+);
 
-    },1200);
+},1200);
 
 }
 
 
-/* Initial floating particles */
+/* INITIAL FLOATING EFFECT */
 
 createFloating();
 
