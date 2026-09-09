@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
 
 <title>Happy Birthday Assar Imam ❤️</title>
 
@@ -26,9 +26,9 @@ body{
     font-family:'Montserrat',sans-serif;
     color:white;
     background:
-        radial-gradient(circle at 50% 20%,#3b052d 0%,transparent 32%),
-        radial-gradient(circle at 10% 90%,#28004c 0%,transparent 35%),
-        linear-gradient(145deg,#02010a,#100016 50%,#02020c);
+      radial-gradient(circle at 50% 20%,#3b052d 0%,transparent 32%),
+      radial-gradient(circle at 10% 90%,#28004c 0%,transparent 35%),
+      linear-gradient(145deg,#02010a,#100016 50%,#02020c);
 }
 
 /* BACKGROUND */
@@ -45,7 +45,7 @@ body{
     position:absolute;
     inset:0;
     background:
-        radial-gradient(circle,rgba(255,255,255,.9) 1px,transparent 1px);
+      radial-gradient(circle,rgba(255,255,255,.9) 1px,transparent 1px);
     background-size:80px 80px;
     opacity:.18;
 }
@@ -74,13 +74,6 @@ body{
 }
 
 /* FLOATING HEARTS */
-
-#floating{
-    position:fixed;
-    inset:0;
-    pointer-events:none;
-    z-index:2;
-}
 
 .float{
     position:absolute;
@@ -114,10 +107,12 @@ body{
 }
 
 .hidden{
-    opacity:0 !important;
-    pointer-events:none !important;
+    opacity:0!important;
+    pointer-events:none!important;
     transform:scale(.92);
 }
+
+/* CONTENT */
 
 .content{
     width:100%;
@@ -140,8 +135,8 @@ h1{
     line-height:.9;
     letter-spacing:3px;
     text-shadow:
-        0 0 10px #fff,
-        0 0 30px #ff267d;
+      0 0 10px #fff,
+      0 0 30px #ff267d;
 }
 
 .script{
@@ -149,12 +144,14 @@ h1{
     font-size:clamp(55px,15vw,100px);
     color:#ffb3d2;
     text-shadow:
-        0 0 8px #fff,
-        0 0 25px #ff237c,
-        0 0 55px #ff0066;
+      0 0 8px #fff,
+      0 0 25px #ff237c,
+      0 0 55px #ff0066;
 }
 
-/* GLOSSY HEART */
+/* ===================================
+   GLOSSY HEART
+=================================== */
 
 .heartBox{
     width:220px;
@@ -172,28 +169,27 @@ h1{
     position:relative;
     transform:rotate(-45deg);
     border-radius:22px;
-
     background:
-        radial-gradient(
-            circle at 32% 25%,
-            #ffffff 0%,
-            #ffdce9 7%,
-            #ffb0cd 16%,
-            transparent 18%
-        ),
-        linear-gradient(
-            145deg,
-            #ffd0df 0%,
-            #ff91b7 22%,
-            #ff3c82 55%,
-            #d90058 100%
-        );
+      radial-gradient(
+        circle at 32% 25%,
+        #fff 0%,
+        #ffdce9 7%,
+        #ffb0cd 16%,
+        transparent 18%
+      ),
+      linear-gradient(
+        145deg,
+        #ffd0df 0%,
+        #ff91b7 22%,
+        #ff3c82 55%,
+        #d90058 100%
+      );
 
     box-shadow:
-        0 0 8px #fff,
-        0 0 20px #ff5b9d,
-        0 0 45px #ff0066,
-        0 0 90px rgba(255,0,100,.65);
+      0 0 8px #fff,
+      0 0 20px #ff5b9d,
+      0 0 45px #ff0066,
+      0 0 90px rgba(255,0,100,.65);
 
     animation:heartBeat 1.8s ease-in-out infinite;
 }
@@ -228,9 +224,7 @@ h1{
     font-size:12px;
     font-weight:700;
     letter-spacing:3px;
-    text-shadow:
-        0 0 10px white,
-        0 0 20px #ff176f;
+    text-shadow:0 0 10px white,0 0 20px #ff176f;
 }
 
 @keyframes heartBeat{
@@ -249,29 +243,25 @@ h1{
     padding:17px 45px;
     border-radius:50px;
     border:1px solid rgba(255,220,235,.9);
-
-    background:
-        linear-gradient(
-            90deg,
-            #ff075e,
-            #ff388b,
-            #ff075e
-        );
-
+    background:linear-gradient(
+      90deg,
+      #ff075e,
+      #ff388b,
+      #ff075e
+    );
     color:white;
     font-size:16px;
     font-weight:600;
     letter-spacing:1px;
-
     box-shadow:
-        0 0 10px #ff4a98,
-        0 0 35px #ff0066,
-        inset 0 0 15px rgba(255,255,255,.3);
-
-    cursor:pointer;
+      0 0 10px #ff4a98,
+      0 0 35px #ff0066,
+      inset 0 0 15px rgba(255,255,255,.3);
 }
 
-/* GAME */
+/* ===================================
+   GAME
+=================================== */
 
 .gameCard{
     padding:30px 18px;
@@ -281,8 +271,8 @@ h1{
     border:1px solid rgba(255,110,170,.5);
 
     box-shadow:
-        0 0 30px rgba(255,0,100,.2),
-        inset 0 0 40px rgba(255,0,100,.05);
+      0 0 30px rgba(255,0,100,.2),
+      inset 0 0 40px rgba(255,0,100,.05);
 
     backdrop-filter:blur(18px);
 }
@@ -314,17 +304,14 @@ h1{
     right:65px;
     top:80px;
     height:2px;
-
-    background:
-        linear-gradient(
-            90deg,
-            transparent,
-            #ff73ad,
-            #ff176f,
-            #ff73ad,
-            transparent
-        );
-
+    background:linear-gradient(
+      90deg,
+      transparent,
+      #ff73ad,
+      #ff176f,
+      #ff73ad,
+      transparent
+    );
     box-shadow:0 0 12px #ff176f;
 }
 
@@ -346,8 +333,8 @@ h1{
     touch-action:none;
 
     filter:
-        drop-shadow(0 0 5px white)
-        drop-shadow(0 0 15px #ff176f);
+      drop-shadow(0 0 5px white)
+      drop-shadow(0 0 15px #ff176f);
 }
 
 .target{
@@ -366,13 +353,11 @@ h1{
     position:absolute;
     width:105px;
     height:105px;
-
     border:1px solid rgba(255,70,150,.6);
     border-radius:50%;
-
     box-shadow:
-        0 0 15px #ff176f,
-        inset 0 0 20px rgba(255,0,100,.25);
+      0 0 15px #ff176f,
+      inset 0 0 20px rgba(255,0,100,.25);
 
     animation:ring 2s infinite;
 }
@@ -386,11 +371,10 @@ h1{
 .targetHeart{
     font-size:52px;
     z-index:2;
-
     filter:
-        drop-shadow(0 0 5px white)
-        drop-shadow(0 0 18px #ff176f)
-        drop-shadow(0 0 35px #ff0066);
+      drop-shadow(0 0 5px white)
+      drop-shadow(0 0 18px #ff176f)
+      drop-shadow(0 0 35px #ff0066);
 }
 
 @keyframes ring{
@@ -398,7 +382,6 @@ h1{
         transform:scale(.9);
         opacity:.5;
     }
-
     50%{
         transform:scale(1.1);
         opacity:1;
@@ -409,16 +392,16 @@ h1{
     display:inline-block;
     margin-top:10px;
     padding:10px 20px;
-
     border-radius:30px;
     border:1px solid rgba(255,100,170,.3);
-
     color:#ffafd0;
     font-size:10px;
     letter-spacing:2px;
 }
 
-/* FINAL SCREEN */
+/* ===================================
+   FINAL
+=================================== */
 
 .final{
     overflow:auto;
@@ -445,8 +428,8 @@ h1{
     border:1px solid #ff438e;
 
     box-shadow:
-        0 0 25px rgba(255,0,100,.3),
-        inset 0 0 25px rgba(255,0,100,.05);
+      0 0 25px rgba(255,0,100,.3),
+      inset 0 0 25px rgba(255,0,100,.05);
 
     backdrop-filter:blur(15px);
 }
@@ -468,7 +451,7 @@ h1{
     text-transform:uppercase;
 }
 
-/* MUSIC BUTTON */
+/* MUSIC */
 
 .music{
     position:fixed;
@@ -485,38 +468,6 @@ h1{
     color:#ffafd0;
 
     z-index:100;
-    cursor:pointer;
-
-    box-shadow:0 0 15px rgba(255,0,100,.3);
-}
-
-/* MUSIC STATUS */
-
-.musicStatus{
-    position:fixed;
-    top:70px;
-    right:15px;
-
-    padding:7px 12px;
-
-    border-radius:20px;
-
-    background:rgba(20,5,30,.8);
-    border:1px solid rgba(255,100,170,.4);
-
-    color:#ffb5d2;
-
-    font-size:9px;
-    letter-spacing:1px;
-
-    opacity:0;
-    transition:.4s;
-
-    z-index:100;
-}
-
-.musicStatus.show{
-    opacity:1;
 }
 
 /* FIREWORKS */
@@ -526,9 +477,7 @@ h1{
     inset:0;
     width:100%;
     height:100%;
-
     pointer-events:none;
-
     z-index:50;
 }
 
@@ -556,13 +505,12 @@ h1{
     .wish p{
         font-size:19px;
     }
+
 }
 </style>
 </head>
 
 <body>
-
-<!-- BACKGROUND -->
 
 <div class="bg">
     <div class="glow g1"></div>
@@ -573,579 +521,342 @@ h1{
 
 <canvas id="fireworks"></canvas>
 
-
-<!-- =========================================
-     MUSIC
-     
-     YOUR ACTUAL GITHUB FILE:
-     birthday.mp3 .mp3
-========================================= -->
-
-<audio id="music" preload="auto" loop>
-    <source src="birthday.mp3%20.mp3" type="audio/mpeg">
+<audio id="music" loop>
+    <source src="birthday.mp3" type="audio/mpeg">
 </audio>
 
-
-<!-- MUSIC BUTTON -->
-
-<button
-    class="music"
-    id="musicBtn"
-    onclick="toggleMusic()">
+<button class="music" onclick="toggleMusic()" id="musicBtn">
     ♫
 </button>
 
-<div
-    class="musicStatus"
-    id="musicStatus">
-    MUSIC ON ❤️
-</div>
 
-
-<!-- =========================================
+<!-- ================================
      START SCREEN
-========================================= -->
+================================ -->
 
 <section class="screen" id="start">
 
-    <div class="content">
+<div class="content">
 
-        <div class="label">
-            A SPECIAL SURPRISE
+    <div class="label">
+        A SPECIAL SURPRISE
+    </div>
+
+    <div class="heartBox">
+
+        <div class="heart">
+
+            <div class="heartText">
+                FOR YOU ❤️
+            </div>
+
         </div>
+
+    </div>
+
+    <h1>
+        A Special
+    </h1>
+
+    <div class="script">
+        Surprise
+    </div>
+
+    <div style="
+        margin-top:15px;
+        font-family:'Cormorant Garamond';
+        font-size:21px;
+        letter-spacing:2px;
+    ">
+        Someone Special Deserves<br>
+        A Special Day ❤️
+    </div>
+
+    <button class="btn" onclick="begin()">
+        Tap to Begin&nbsp;&nbsp; →
+    </button>
+
+</div>
+
+</section>
+
+
+<!-- ================================
+     ARROW GAME
+================================ -->
+
+<section class="screen hidden" id="game">
+
+<div class="content">
+
+    <div class="gameCard">
+
+        <div class="gameTitle">
+            Let's Begin... ♡
+        </div>
+
+        <div class="instruction">
+            Drag the arrow towards the heart
+        </div>
+
+        <div class="arrowArea">
+
+            <div class="track"></div>
+
+            <div
+                class="dragArrow"
+                id="arrow">
+                🏹
+            </div>
+
+            <div class="target">
+
+                <div class="ring"></div>
+                <div class="ring ring2"></div>
+
+                <div class="targetHeart">
+                    ❤️
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="hint">
+            PULL → AIM → RELEASE → MAKE IT HAPPEN ♡
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- ================================
+     FINAL SCREEN
+================================ -->
+
+<section class="screen hidden final" id="final">
+
+<div class="content finalContent">
+
+    <div class="label">
+        TODAY IS ALL ABOUT YOU
+    </div>
+
+    <h1>
+        HAPPY BIRTHDAY
+    </h1>
+
+    <div class="finalHeart">
 
         <div class="heartBox">
 
             <div class="heart">
 
                 <div class="heartText">
-                    FOR YOU ❤️
+                    ASSAR ❤️
                 </div>
 
-            </div>
-
-        </div>
-
-        <h1>
-            A Special
-        </h1>
-
-        <div class="script">
-            Surprise
-        </div>
-
-        <div
-            style="
-            margin-top:15px;
-            font-family:'Cormorant Garamond';
-            font-size:21px;
-            letter-spacing:2px;
-            ">
-
-            Someone Special Deserves<br>
-            A Special Day ❤️
-
-        </div>
-
-        <button
-            class="btn"
-            id="beginButton"
-            onclick="begin()">
-
-            Tap to Begin&nbsp;&nbsp; →
-
-        </button>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================
-     ARROW GAME
-========================================= -->
-
-<section
-    class="screen hidden"
-    id="game">
-
-    <div class="content">
-
-        <div class="gameCard">
-
-            <div class="gameTitle">
-                Let's Begin... ♡
-            </div>
-
-            <div class="instruction">
-                Drag the arrow towards the heart
-            </div>
-
-            <div class="arrowArea">
-
-                <div class="track"></div>
-
-                <div
-                    class="dragArrow"
-                    id="arrow">
-
-                    🏹
-
-                </div>
-
-                <div class="target">
-
-                    <div class="ring"></div>
-
-                    <div class="ring ring2"></div>
-
-                    <div class="targetHeart">
-                        ❤️
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="hint">
-                PULL → AIM → RELEASE → MAKE IT HAPPEN ♡
             </div>
 
         </div>
 
     </div>
 
-</section>
+    <div class="script">
+        Assar Imam
+    </div>
 
+    <div class="wish">
 
-<!-- =========================================
-     FINAL BIRTHDAY SCREEN
-========================================= -->
+        <p>
 
-<section
-    class="screen hidden final"
-    id="final">
+        May your life always be filled with
+        <strong>happiness, success, love</strong>
+        and endless beautiful moments.
 
-    <div class="content finalContent">
+        <br><br>
 
-        <div class="label">
-            TODAY IS ALL ABOUT YOU
-        </div>
+        You deserve all the good things
+        in this world.
 
-        <h1>
-            HAPPY BIRTHDAY
-        </h1>
+        <br><br>
 
+        <strong>
+            Stay Amazing Always ❤️
+        </strong>
 
-        <div class="finalHeart">
-
-            <div class="heartBox">
-
-                <div class="heart">
-
-                    <div class="heartText">
-                        ASSAR ❤️
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <div class="script">
-            Assar Imam
-        </div>
-
-
-        <div class="wish">
-
-            <p>
-
-                May your life always be filled with
-                <strong>happiness, success, love</strong>
-                and endless beautiful moments.
-
-                <br><br>
-
-                You deserve all the good things
-                in this world.
-
-                <br><br>
-
-                <strong>
-                    Stay Amazing Always ❤️
-                </strong>
-
-            </p>
-
-        </div>
-
-
-        <div class="bottom">
-            🎂 Here's to an incredible year ahead 🎂
-        </div>
+        </p>
 
     </div>
+
+    <div class="bottom">
+        🎂 &nbsp; Here's to an incredible year ahead &nbsp; 🎂
+    </div>
+
+</div>
 
 </section>
 
 
 <script>
 
-/* =========================================
-   MUSIC SETUP
-========================================= */
+/* =================================
+   MUSIC
+================================= */
 
-const music =
-    document.getElementById("music");
-
-const musicBtn =
-    document.getElementById("musicBtn");
-
-const musicStatus =
-    document.getElementById("musicStatus");
-
-let musicStarted = false;
-
-
-/*
-   IMPORTANT:
-   GitHub file name is:
-
-   birthday.mp3 .mp3
-
-   Space is represented by %20
-*/
-
-const musicFile =
-    "birthday.mp3%20.mp3";
-
-
-/* Set exact audio source */
-
-music.src = musicFile;
-
-
-/* =========================================
-   START WEBSITE + MUSIC
-========================================= */
+const music=document.getElementById("music");
+const musicBtn=document.getElementById("musicBtn");
 
 function begin(){
 
-    /* Change screen */
+    document.getElementById("start")
+        .classList.add("hidden");
 
-    document
-        .getElementById("start")
-        .classList
-        .add("hidden");
+    document.getElementById("game")
+        .classList.remove("hidden");
 
-    document
-        .getElementById("game")
-        .classList
-        .remove("hidden");
+    music.volume=.75;
 
-
-    /* Start music after user's tap */
-
-    music.volume = 0.8;
-
-    music.currentTime = 0;
-
-    const playPromise =
-        music.play();
-
-
-    if(playPromise !== undefined){
-
-        playPromise
-        .then(function(){
-
-            musicStarted = true;
-
-            musicBtn.innerHTML = "♫";
-
-            showMusicStatus("MUSIC ON ❤️");
-
-        })
-        .catch(function(error){
-
-            console.log(
-                "Music error:",
-                error
-            );
-
-            showMusicStatus(
-                "Tap ♫ for music"
-            );
-
-        });
-
-    }
+    music.play().catch(()=>{});
 
 }
-
-
-/* =========================================
-   MUSIC BUTTON
-========================================= */
 
 function toggleMusic(){
 
     if(music.paused){
 
-        music.play()
-        .then(function(){
+        music.play();
+        musicBtn.innerHTML="♫";
 
-            musicStarted = true;
-
-            musicBtn.innerHTML = "♫";
-
-            showMusicStatus(
-                "MUSIC ON ❤️"
-            );
-
-        })
-        .catch(function(error){
-
-            console.log(
-                "Music could not start:",
-                error
-            );
-
-            showMusicStatus(
-                "Music file could not load"
-            );
-
-        });
-
-    }
-    else{
+    }else{
 
         music.pause();
-
-        musicBtn.innerHTML = "🔇";
-
-        showMusicStatus(
-            "MUSIC OFF"
-        );
+        musicBtn.innerHTML="🔇";
 
     }
 
 }
 
 
-/* =========================================
-   MUSIC STATUS
-========================================= */
+/* =================================
+   ARROW
+================================= */
 
-let statusTimer;
+const arrow=document.getElementById("arrow");
+const area=document.querySelector(".arrowArea");
 
-function showMusicStatus(text){
+let dragging=false;
+let finished=false;
 
-    musicStatus.innerHTML = text;
+arrow.addEventListener("pointerdown",e=>{
 
-    musicStatus.classList.add("show");
+    if(finished)return;
 
-    clearTimeout(statusTimer);
+    dragging=true;
 
-    statusTimer =
-        setTimeout(function(){
+    arrow.setPointerCapture(e.pointerId);
 
-            musicStatus.classList.remove("show");
-
-        },2000);
-
-}
+});
 
 
-/* =========================================
-   ARROW DRAG
-========================================= */
+arrow.addEventListener("pointermove",e=>{
 
-const arrow =
-    document.getElementById("arrow");
+    if(!dragging || finished)return;
 
-const area =
-    document.querySelector(".arrowArea");
+    const rect=area.getBoundingClientRect();
 
-let dragging = false;
-let finished = false;
+    let x=e.clientX-rect.left-35;
 
+    const min=5;
+    const max=rect.width-85;
 
-arrow.addEventListener(
-    "pointerdown",
-    function(e){
+    x=Math.max(min,Math.min(x,max));
 
-        if(finished) return;
+    arrow.style.left=x+"px";
 
-        dragging = true;
+    if(x>=max-5){
 
-        arrow.setPointerCapture(
-            e.pointerId
-        );
+        finished=true;
+        dragging=false;
+
+        arrow.style.left=max+"px";
+
+        setTimeout(showBirthday,500);
 
     }
-);
+
+});
 
 
-arrow.addEventListener(
-    "pointermove",
-    function(e){
+arrow.addEventListener("pointerup",()=>{
 
-        if(!dragging || finished)
-            return;
+    dragging=false;
 
-
-        const rect =
-            area.getBoundingClientRect();
+});
 
 
-        let x =
-            e.clientX -
-            rect.left -
-            35;
-
-
-        const min = 5;
-
-        const max =
-            rect.width - 85;
-
-
-        x =
-            Math.max(
-                min,
-                Math.min(x,max)
-            );
-
-
-        arrow.style.left =
-            x + "px";
-
-
-        /* Arrow reached heart */
-
-        if(x >= max - 5){
-
-            finished = true;
-
-            dragging = false;
-
-            arrow.style.left =
-                max + "px";
-
-
-            setTimeout(
-                showBirthday,
-                500
-            );
-
-        }
-
-    }
-);
-
-
-arrow.addEventListener(
-    "pointerup",
-    function(){
-
-        dragging = false;
-
-    }
-);
-
-
-/* =========================================
+/* =================================
    BIRTHDAY REVEAL
-========================================= */
+================================= */
 
 function showBirthday(){
 
-    document
-        .getElementById("game")
-        .classList
-        .add("hidden");
+    document.getElementById("game")
+        .classList.add("hidden");
 
-
-    document
-        .getElementById("final")
-        .classList
-        .remove("hidden");
-
+    document.getElementById("final")
+        .classList.remove("hidden");
 
     createFloating();
 
-
-    setTimeout(
-        fireworks,
-        300
-    );
+    setTimeout(()=>{
+        fireworks();
+    },300);
 
 }
 
 
-/* =========================================
+/* =================================
    FLOATING HEARTS
-========================================= */
+================================= */
 
 function createFloating(){
 
-    const container =
+    const container=
         document.getElementById("floating");
 
-
-    const symbols = [
-        "♡",
-        "♥",
-        "✦",
-        "✧",
-        "❤"
+    const symbols=[
+        "♡","♥","✦","✧","❤"
     ];
-
 
     for(let i=0;i<25;i++){
 
-        const el =
+        const el=
             document.createElement("div");
 
+        el.className="float";
 
-        el.className =
-            "float";
-
-
-        el.innerHTML =
+        el.innerHTML=
             symbols[
-                Math.floor(
-                    Math.random() *
-                    symbols.length
-                )
+              Math.floor(
+                Math.random()*symbols.length
+              )
             ];
 
+        el.style.left=
+            Math.random()*100+"%";
 
-        el.style.left =
-            Math.random() *
-            100 + "%";
+        el.style.fontSize=
+            (10+Math.random()*20)+"px";
 
+        el.style.animationDuration=
+            (6+Math.random()*9)+"s";
 
-        el.style.fontSize =
-            (10 +
-            Math.random() * 20) +
-            "px";
-
-
-        el.style.animationDuration =
-            (6 +
-            Math.random() * 9) +
-            "s";
-
-
-        el.style.animationDelay =
-            Math.random() * 6 +
-            "s";
-
+        el.style.animationDelay=
+            Math.random()*6+"s";
 
         container.appendChild(el);
 
@@ -1154,93 +865,63 @@ function createFloating(){
 }
 
 
-/* =========================================
+/* =================================
    FIREWORKS
-========================================= */
+================================= */
 
-const canvas =
-    document.getElementById(
-        "fireworks"
-    );
+const canvas=
+    document.getElementById("fireworks");
 
-const ctx =
+const ctx=
     canvas.getContext("2d");
 
-
-let particles = [];
-
+let particles=[];
 
 function resize(){
 
-    canvas.width =
-        window.innerWidth;
-
-    canvas.height =
-        window.innerHeight;
+    canvas.width=window.innerWidth;
+    canvas.height=window.innerHeight;
 
 }
 
-
 resize();
 
-
-window.addEventListener(
-    "resize",
-    resize
-);
+window.addEventListener("resize",resize);
 
 
-const colors = [
-
+const colors=[
     "#ff176f",
     "#ff72ae",
     "#ffffff",
     "#b56cff",
     "#63d9ff",
     "#ffd166"
-
 ];
 
 
 function createFirework(){
 
-    const x =
-        Math.random() *
-        canvas.width;
+    const x=
+        Math.random()*canvas.width;
 
+    const y=
+        70+
+        Math.random()*canvas.height*.45;
 
-    const y =
-        70 +
-        Math.random() *
-        canvas.height *
-        .45;
-
-
-    const color =
+    const color=
         colors[
             Math.floor(
-                Math.random() *
-                colors.length
+                Math.random()*colors.length
             )
         ];
 
+    for(let i=0;i<75;i++){
 
-    for(
-        let i=0;
-        i<75;
-        i++
-    ){
+        const angle=
+            Math.random()*Math.PI*2;
 
-        const angle =
-            Math.random() *
-            Math.PI *
-            2;
-
-
-        const speed =
-            Math.random() *
-            7 + 2;
-
+        const speed=
+            Math.random()*7+2;
 
         particles.push({
 
@@ -1248,18 +929,15 @@ function createFirework(){
             y:y,
 
             vx:
-                Math.cos(angle) *
-                speed,
+                Math.cos(angle)*speed,
 
             vy:
-                Math.sin(angle) *
-                speed,
+                Math.sin(angle)*speed,
 
             life:100,
 
             size:
-                Math.random() *
-                2.5 + 1,
+                Math.random()*2.5+1,
 
             color:color
 
@@ -1279,80 +957,51 @@ function animate(){
         canvas.height
     );
 
+    for(let i=particles.length-1;i>=0;i--){
 
-    for(
-        let i=particles.length-1;
-        i>=0;
-        i--
-    ){
+        const p=particles[i];
 
-        const p =
-            particles[i];
+        p.x+=p.vx;
+        p.y+=p.vy;
 
+        p.vx*=.985;
+        p.vy*=.985;
 
-        p.x += p.vx;
-
-        p.y += p.vy;
-
-
-        p.vx *= .985;
-
-        p.vy *= .985;
-
-
-        p.vy += .045;
-
+        p.vy+=.045;
 
         p.life--;
 
-
-        ctx.globalAlpha =
-            p.life / 100;
-
+        ctx.globalAlpha=
+            p.life/100;
 
         ctx.beginPath();
-
 
         ctx.arc(
             p.x,
             p.y,
             p.size,
             0,
-            Math.PI * 2
+            Math.PI*2
         );
 
+        ctx.fillStyle=p.color;
 
-        ctx.fillStyle =
-            p.color;
-
-
-        ctx.shadowBlur = 15;
-
-        ctx.shadowColor =
-            p.color;
-
+        ctx.shadowBlur=15;
+        ctx.shadowColor=p.color;
 
         ctx.fill();
 
+        if(p.life<=0){
 
-        if(p.life <= 0){
-
-            particles.splice(
-                i,
-                1
-            );
+            particles.splice(i,1);
 
         }
 
     }
 
+    ctx.globalAlpha=1;
 
-    ctx.globalAlpha = 1;
-
-
-    requestAnimationFrame(
-        animate
-    );
+    requestAnimationFrame(animate);
 
 }
 
@@ -1361,30 +1010,23 @@ function fireworks(){
 
     animate();
 
-
     createFirework();
 
+    setInterval(()=>{
 
-    setInterval(
-        function(){
+        createFirework();
 
-            createFirework();
+        setTimeout(
+            createFirework,
+            400
+        );
 
-            setTimeout(
-                createFirework,
-                400
-            );
-
-        },
-        1200
-    );
+    },1200);
 
 }
 
 
-/* =========================================
-   INITIAL FLOATING EFFECT
-========================================= */
+/* Initial floating particles */
 
 createFloating();
 
