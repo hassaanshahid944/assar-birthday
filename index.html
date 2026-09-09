@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
 <title>Happy Birthday Assar Imam ❤️</title>
 
@@ -10,498 +10,563 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap');
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
--webkit-tap-highlight-color:transparent;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    -webkit-tap-highlight-color:transparent;
 }
 
 html,body{
-width:100%;
-height:100%;
-overflow:hidden;
+    width:100%;
+    height:100%;
+    overflow:hidden;
 }
 
 body{
-font-family:'Montserrat',sans-serif;
-color:white;
-background:
-radial-gradient(circle at 50% 20%,#3b052d 0%,transparent 32%),
-radial-gradient(circle at 10% 90%,#28004c 0%,transparent 35%),
-linear-gradient(145deg,#02010a,#100016 50%,#02020c);
+    font-family:'Montserrat',sans-serif;
+    color:white;
+    background:
+        radial-gradient(circle at 50% 20%,#3b052d 0%,transparent 32%),
+        radial-gradient(circle at 10% 90%,#28004c 0%,transparent 35%),
+        linear-gradient(145deg,#02010a,#100016 50%,#02020c);
 }
 
 /* BACKGROUND */
 
 .bg{
-position:fixed;
-inset:0;
-overflow:hidden;
-pointer-events:none;
+    position:fixed;
+    inset:0;
+    overflow:hidden;
+    pointer-events:none;
 }
 
 .bg:before{
-content:"";
-position:absolute;
-inset:0;
-background:
-radial-gradient(circle,rgba(255,255,255,.9) 1px,transparent 1px);
-background-size:80px 80px;
-opacity:.18;
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+        radial-gradient(circle,rgba(255,255,255,.9) 1px,transparent 1px);
+    background-size:80px 80px;
+    opacity:.18;
 }
 
 .glow{
-position:absolute;
-border-radius:50%;
-filter:blur(90px);
-opacity:.35;
+    position:absolute;
+    border-radius:50%;
+    filter:blur(90px);
+    opacity:.35;
 }
 
 .g1{
-width:350px;
-height:350px;
-background:#ff0066;
-top:-150px;
-left:-120px;
+    width:350px;
+    height:350px;
+    background:#ff0066;
+    top:-150px;
+    left:-120px;
 }
 
 .g2{
-width:300px;
-height:300px;
-background:#7d00ff;
-bottom:-120px;
-right:-100px;
+    width:300px;
+    height:300px;
+    background:#7d00ff;
+    bottom:-120px;
+    right:-100px;
 }
 
 /* FLOATING HEARTS */
 
+#floating{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:2;
+}
+
 .float{
-position:absolute;
-color:#ff4d96;
-text-shadow:0 0 15px #ff176f;
-opacity:.45;
-animation:floatUp linear infinite;
+    position:absolute;
+    color:#ff4d96;
+    text-shadow:0 0 15px #ff176f;
+    opacity:.45;
+    animation:floatUp linear infinite;
 }
 
 @keyframes floatUp{
-from{transform:translateY(110vh);}
-to{transform:translateY(-20vh);}
+    from{
+        transform:translateY(110vh);
+    }
+    to{
+        transform:translateY(-20vh);
+    }
 }
 
-/* SCREEN */
+/* SCREENS */
 
 .screen{
-position:absolute;
-inset:0;
-display:flex;
-align-items:center;
-justify-content:center;
-padding:20px;
-text-align:center;
-transition:.8s ease;
-z-index:5;
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    text-align:center;
+    transition:.8s ease;
+    z-index:5;
 }
 
 .hidden{
-opacity:0!important;
-pointer-events:none!important;
-transform:scale(.92);
+    opacity:0 !important;
+    pointer-events:none !important;
+    transform:scale(.92);
 }
 
 .content{
-width:100%;
-max-width:650px;
+    width:100%;
+    max-width:650px;
 }
 
 /* TEXT */
 
 .label{
-color:#ffabc9;
-font-size:11px;
-letter-spacing:5px;
-text-transform:uppercase;
-margin-bottom:15px;
+    color:#ffabc9;
+    font-size:11px;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    margin-bottom:15px;
 }
 
 h1{
-font-family:'Cormorant Garamond',serif;
-font-size:clamp(45px,12vw,75px);
-line-height:.9;
-letter-spacing:3px;
-text-shadow:
-0 0 10px #fff,
-0 0 30px #ff267d;
+    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(45px,12vw,75px);
+    line-height:.9;
+    letter-spacing:3px;
+    text-shadow:
+        0 0 10px #fff,
+        0 0 30px #ff267d;
 }
 
 .script{
-font-family:'Great Vibes',cursive;
-font-size:clamp(55px,15vw,100px);
-color:#ffb3d2;
-text-shadow:
-0 0 8px #fff,
-0 0 25px #ff237c,
-0 0 55px #ff0066;
+    font-family:'Great Vibes',cursive;
+    font-size:clamp(55px,15vw,100px);
+    color:#ffb3d2;
+    text-shadow:
+        0 0 8px #fff,
+        0 0 25px #ff237c,
+        0 0 55px #ff0066;
 }
 
 /* GLOSSY HEART */
 
 .heartBox{
-width:220px;
-height:200px;
-margin:0 auto 15px;
-display:flex;
-align-items:center;
-justify-content:center;
-position:relative;
+    width:220px;
+    height:200px;
+    margin:0 auto 15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
 }
 
 .heart{
-width:145px;
-height:145px;
-position:relative;
-transform:rotate(-45deg);
-border-radius:22px;
+    width:145px;
+    height:145px;
+    position:relative;
+    transform:rotate(-45deg);
+    border-radius:22px;
 
-background:
-radial-gradient(
-circle at 32% 25%,
-#fff 0%,
-#ffdce9 7%,
-#ffb0cd 16%,
-transparent 18%
-),
-linear-gradient(
-145deg,
-#ffd0df 0%,
-#ff91b7 22%,
-#ff3c82 55%,
-#d90058 100%
-);
+    background:
+        radial-gradient(
+            circle at 32% 25%,
+            #ffffff 0%,
+            #ffdce9 7%,
+            #ffb0cd 16%,
+            transparent 18%
+        ),
+        linear-gradient(
+            145deg,
+            #ffd0df 0%,
+            #ff91b7 22%,
+            #ff3c82 55%,
+            #d90058 100%
+        );
 
-box-shadow:
-0 0 8px #fff,
-0 0 20px #ff5b9d,
-0 0 45px #ff0066,
-0 0 90px rgba(255,0,100,.65);
+    box-shadow:
+        0 0 8px #fff,
+        0 0 20px #ff5b9d,
+        0 0 45px #ff0066,
+        0 0 90px rgba(255,0,100,.65);
 
-animation:heartBeat 1.8s ease-in-out infinite;
+    animation:heartBeat 1.8s ease-in-out infinite;
 }
 
 .heart:before,
 .heart:after{
-content:"";
-position:absolute;
-width:145px;
-height:145px;
-border-radius:50%;
-background:inherit;
+    content:"";
+    position:absolute;
+    width:145px;
+    height:145px;
+    border-radius:50%;
+    background:inherit;
 }
 
 .heart:before{
-top:-72px;
-left:0;
+    top:-72px;
+    left:0;
 }
 
 .heart:after{
-top:0;
-left:72px;
+    top:0;
+    left:72px;
 }
 
 .heartText{
-position:absolute;
-z-index:3;
-transform:rotate(45deg);
-width:200px;
-left:-27px;
-top:52px;
-font-size:12px;
-font-weight:700;
-letter-spacing:3px;
-text-shadow:0 0 10px white,0 0 20px #ff176f;
+    position:absolute;
+    z-index:3;
+    transform:rotate(45deg);
+    width:200px;
+    left:-27px;
+    top:52px;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:3px;
+    text-shadow:
+        0 0 10px white,
+        0 0 20px #ff176f;
 }
 
 @keyframes heartBeat{
-0%,100%{
-transform:rotate(-45deg) scale(1);
-}
-50%{
-transform:rotate(-45deg) scale(1.08);
-}
+    0%,100%{
+        transform:rotate(-45deg) scale(1);
+    }
+    50%{
+        transform:rotate(-45deg) scale(1.08);
+    }
 }
 
 /* BUTTON */
 
 .btn{
-margin-top:25px;
-padding:17px 45px;
-border-radius:50px;
-border:1px solid rgba(255,220,235,.9);
-background:linear-gradient(
-90deg,
-#ff075e,
-#ff388b,
-#ff075e
-);
-color:white;
-font-size:16px;
-font-weight:600;
-letter-spacing:1px;
-box-shadow:
-0 0 10px #ff4a98,
-0 0 35px #ff0066,
-inset 0 0 15px rgba(255,255,255,.3);
-cursor:pointer;
+    margin-top:25px;
+    padding:17px 45px;
+    border-radius:50px;
+    border:1px solid rgba(255,220,235,.9);
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff075e,
+            #ff388b,
+            #ff075e
+        );
+
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    letter-spacing:1px;
+
+    box-shadow:
+        0 0 10px #ff4a98,
+        0 0 35px #ff0066,
+        inset 0 0 15px rgba(255,255,255,.3);
+
+    cursor:pointer;
 }
 
 /* GAME */
 
 .gameCard{
-padding:30px 18px;
-border-radius:28px;
+    padding:30px 18px;
+    border-radius:28px;
 
-background:rgba(10,5,25,.55);
-border:1px solid rgba(255,110,170,.5);
+    background:rgba(10,5,25,.55);
+    border:1px solid rgba(255,110,170,.5);
 
-box-shadow:
-0 0 30px rgba(255,0,100,.2),
-inset 0 0 40px rgba(255,0,100,.05);
+    box-shadow:
+        0 0 30px rgba(255,0,100,.2),
+        inset 0 0 40px rgba(255,0,100,.05);
 
-backdrop-filter:blur(18px);
+    backdrop-filter:blur(18px);
 }
 
 .gameTitle{
-font-family:'Great Vibes',cursive;
-color:#ffb5d2;
-font-size:60px;
-text-shadow:0 0 20px #ff176f;
+    font-family:'Great Vibes',cursive;
+    color:#ffb5d2;
+    font-size:60px;
+    text-shadow:0 0 20px #ff176f;
 }
 
 .instruction{
-margin-top:5px;
-font-size:11px;
-letter-spacing:3px;
-text-transform:uppercase;
+    margin-top:5px;
+    font-size:11px;
+    letter-spacing:3px;
+    text-transform:uppercase;
 }
 
 .arrowArea{
-position:relative;
-width:100%;
-height:160px;
-margin-top:20px;
+    position:relative;
+    width:100%;
+    height:160px;
+    margin-top:20px;
 }
 
 .track{
-position:absolute;
-left:40px;
-right:65px;
-top:80px;
-height:2px;
-background:linear-gradient(
-90deg,
-transparent,
-#ff73ad,
-#ff176f,
-#ff73ad,
-transparent
-);
-box-shadow:0 0 12px #ff176f;
+    position:absolute;
+    left:40px;
+    right:65px;
+    top:80px;
+    height:2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #ff73ad,
+            #ff176f,
+            #ff73ad,
+            transparent
+        );
+
+    box-shadow:0 0 12px #ff176f;
 }
 
 .dragArrow{
-position:absolute;
-left:10px;
-top:50px;
-width:70px;
-height:60px;
+    position:absolute;
+    left:10px;
+    top:50px;
+    width:70px;
+    height:60px;
 
-display:flex;
-align-items:center;
-justify-content:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
-font-size:48px;
-z-index:4;
+    font-size:48px;
+    z-index:4;
 
-cursor:grab;
-touch-action:none;
+    cursor:grab;
+    touch-action:none;
 
-filter:
-drop-shadow(0 0 5px white)
-drop-shadow(0 0 15px #ff176f);
+    filter:
+        drop-shadow(0 0 5px white)
+        drop-shadow(0 0 15px #ff176f);
 }
 
 .target{
-position:absolute;
-right:-5px;
-top:28px;
-width:105px;
-height:105px;
+    position:absolute;
+    right:-5px;
+    top:28px;
+    width:105px;
+    height:105px;
 
-display:flex;
-align-items:center;
-justify-content:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
 .ring{
-position:absolute;
-width:105px;
-height:105px;
-border:1px solid rgba(255,70,150,.6);
-border-radius:50%;
-box-shadow:
-0 0 15px #ff176f,
-inset 0 0 20px rgba(255,0,100,.25);
-animation:ring 2s infinite;
+    position:absolute;
+    width:105px;
+    height:105px;
+
+    border:1px solid rgba(255,70,150,.6);
+    border-radius:50%;
+
+    box-shadow:
+        0 0 15px #ff176f,
+        inset 0 0 20px rgba(255,0,100,.25);
+
+    animation:ring 2s infinite;
 }
 
 .ring2{
-width:75px;
-height:75px;
-animation-delay:.3s;
+    width:75px;
+    height:75px;
+    animation-delay:.3s;
 }
 
 .targetHeart{
-font-size:52px;
-z-index:2;
-filter:
-drop-shadow(0 0 5px white)
-drop-shadow(0 0 18px #ff176f)
-drop-shadow(0 0 35px #ff0066);
+    font-size:52px;
+    z-index:2;
+
+    filter:
+        drop-shadow(0 0 5px white)
+        drop-shadow(0 0 18px #ff176f)
+        drop-shadow(0 0 35px #ff0066);
 }
 
 @keyframes ring{
-0%,100%{
-transform:scale(.9);
-opacity:.5;
-}
-50%{
-transform:scale(1.1);
-opacity:1;
-}
+    0%,100%{
+        transform:scale(.9);
+        opacity:.5;
+    }
+
+    50%{
+        transform:scale(1.1);
+        opacity:1;
+    }
 }
 
 .hint{
-display:inline-block;
-margin-top:10px;
-padding:10px 20px;
-border-radius:30px;
-border:1px solid rgba(255,100,170,.3);
-color:#ffafd0;
-font-size:10px;
-letter-spacing:2px;
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 20px;
+
+    border-radius:30px;
+    border:1px solid rgba(255,100,170,.3);
+
+    color:#ffafd0;
+    font-size:10px;
+    letter-spacing:2px;
 }
 
-/* FINAL */
+/* FINAL SCREEN */
 
 .final{
-overflow:auto;
-align-items:flex-start;
+    overflow:auto;
+    align-items:flex-start;
 }
 
 .finalContent{
-padding:30px 0;
+    padding:30px 0;
 }
 
 .finalHeart{
-transform:scale(.62);
-margin:-20px auto -35px;
+    transform:scale(.62);
+    margin:-20px auto -35px;
 }
 
 .wish{
-max-width:520px;
-margin:20px auto;
-padding:25px 20px;
+    max-width:520px;
+    margin:20px auto;
+    padding:25px 20px;
 
-border-radius:25px;
+    border-radius:25px;
 
-background:rgba(15,5,30,.6);
-border:1px solid #ff438e;
+    background:rgba(15,5,30,.6);
+    border:1px solid #ff438e;
 
-box-shadow:
-0 0 25px rgba(255,0,100,.3),
-inset 0 0 25px rgba(255,0,100,.05);
+    box-shadow:
+        0 0 25px rgba(255,0,100,.3),
+        inset 0 0 25px rgba(255,0,100,.05);
 
-backdrop-filter:blur(15px);
+    backdrop-filter:blur(15px);
 }
 
 .wish p{
-font-family:'Cormorant Garamond',serif;
-font-size:21px;
-line-height:1.55;
+    font-family:'Cormorant Garamond',serif;
+    font-size:21px;
+    line-height:1.55;
 }
 
 .wish strong{
-color:#ff9fc5;
+    color:#ff9fc5;
 }
 
 .bottom{
-color:#ff9fc5;
-font-size:10px;
-letter-spacing:3px;
-text-transform:uppercase;
+    color:#ff9fc5;
+    font-size:10px;
+    letter-spacing:3px;
+    text-transform:uppercase;
 }
 
-/* MUSIC */
+/* MUSIC BUTTON */
 
 .music{
-position:fixed;
-right:18px;
-top:18px;
+    position:fixed;
+    right:18px;
+    top:18px;
 
-width:45px;
-height:45px;
+    width:45px;
+    height:45px;
 
-border-radius:50%;
-border:1px solid rgba(255,120,180,.5);
+    border-radius:50%;
+    border:1px solid rgba(255,120,180,.5);
 
-background:rgba(20,5,30,.7);
-color:#ffafd0;
+    background:rgba(20,5,30,.7);
+    color:#ffafd0;
 
-z-index:100;
+    z-index:100;
+    cursor:pointer;
+
+    box-shadow:0 0 15px rgba(255,0,100,.3);
+}
+
+/* MUSIC STATUS */
+
+.musicStatus{
+    position:fixed;
+    top:70px;
+    right:15px;
+
+    padding:7px 12px;
+
+    border-radius:20px;
+
+    background:rgba(20,5,30,.8);
+    border:1px solid rgba(255,100,170,.4);
+
+    color:#ffb5d2;
+
+    font-size:9px;
+    letter-spacing:1px;
+
+    opacity:0;
+    transition:.4s;
+
+    z-index:100;
+}
+
+.musicStatus.show{
+    opacity:1;
 }
 
 /* FIREWORKS */
 
 #fireworks{
-position:fixed;
-inset:0;
-width:100%;
-height:100%;
-pointer-events:none;
-z-index:50;
+    position:fixed;
+    inset:0;
+    width:100%;
+    height:100%;
+
+    pointer-events:none;
+
+    z-index:50;
 }
+
+/* MOBILE */
 
 @media(max-width:500px){
 
-.heartBox{
-transform:scale(.85);
-margin-top:-10px;
-}
+    .heartBox{
+        transform:scale(.85);
+        margin-top:-10px;
+    }
 
-.gameCard{
-padding:25px 12px;
-}
+    .gameCard{
+        padding:25px 12px;
+    }
 
-.gameTitle{
-font-size:52px;
-}
+    .gameTitle{
+        font-size:52px;
+    }
 
-.instruction{
-font-size:9px;
-}
+    .instruction{
+        font-size:9px;
+    }
 
-.wish p{
-font-size:19px;
-}
-
+    .wish p{
+        font-size:19px;
+    }
 }
 </style>
 </head>
 
 <body>
 
+<!-- BACKGROUND -->
+
 <div class="bg">
-<div class="glow g1"></div>
-<div class="glow g2"></div>
+    <div class="glow g1"></div>
+    <div class="glow g2"></div>
 </div>
 
 <div id="floating"></div>
@@ -509,494 +574,817 @@ font-size:19px;
 <canvas id="fireworks"></canvas>
 
 
-<!-- YOUR ACTUAL GITHUB FILE NAME -->
-<audio id="music" loop preload="auto">
-<source src="birthday.mp3 .mp3" type="audio/mpeg">
+<!-- =========================================
+     MUSIC
+     
+     YOUR ACTUAL GITHUB FILE:
+     birthday.mp3 .mp3
+========================================= -->
+
+<audio id="music" preload="auto" loop>
+    <source src="birthday.mp3%20.mp3" type="audio/mpeg">
 </audio>
 
 
-<button class="music" onclick="toggleMusic()" id="musicBtn">
-♫
+<!-- MUSIC BUTTON -->
+
+<button
+    class="music"
+    id="musicBtn"
+    onclick="toggleMusic()">
+    ♫
 </button>
 
+<div
+    class="musicStatus"
+    id="musicStatus">
+    MUSIC ON ❤️
+</div>
 
-<!-- START -->
+
+<!-- =========================================
+     START SCREEN
+========================================= -->
 
 <section class="screen" id="start">
 
-<div class="content">
+    <div class="content">
 
-<div class="label">
-A SPECIAL SURPRISE
-</div>
+        <div class="label">
+            A SPECIAL SURPRISE
+        </div>
 
-<div class="heartBox">
+        <div class="heartBox">
 
-<div class="heart">
+            <div class="heart">
 
-<div class="heartText">
-FOR YOU ❤️
-</div>
+                <div class="heartText">
+                    FOR YOU ❤️
+                </div>
 
-</div>
+            </div>
 
-</div>
+        </div>
 
-<h1>
-A Special
-</h1>
+        <h1>
+            A Special
+        </h1>
 
-<div class="script">
-Surprise
-</div>
+        <div class="script">
+            Surprise
+        </div>
 
-<div style="
-margin-top:15px;
-font-family:'Cormorant Garamond';
-font-size:21px;
-letter-spacing:2px;
-">
-Someone Special Deserves<br>
-A Special Day ❤️
-</div>
+        <div
+            style="
+            margin-top:15px;
+            font-family:'Cormorant Garamond';
+            font-size:21px;
+            letter-spacing:2px;
+            ">
 
-<button class="btn" onclick="begin()">
-Tap to Begin&nbsp;&nbsp; →
-</button>
+            Someone Special Deserves<br>
+            A Special Day ❤️
 
-</div>
+        </div>
 
-</section>
+        <button
+            class="btn"
+            id="beginButton"
+            onclick="begin()">
 
+            Tap to Begin&nbsp;&nbsp; →
 
-<!-- GAME -->
+        </button>
 
-<section class="screen hidden" id="game">
-
-<div class="content">
-
-<div class="gameCard">
-
-<div class="gameTitle">
-Let's Begin... ♡
-</div>
-
-<div class="instruction">
-Drag the arrow towards the heart
-</div>
-
-<div class="arrowArea">
-
-<div class="track"></div>
-
-<div
-class="dragArrow"
-id="arrow">
-🏹
-</div>
-
-<div class="target">
-
-<div class="ring"></div>
-<div class="ring ring2"></div>
-
-<div class="targetHeart">
-❤️
-</div>
-
-</div>
-
-</div>
-
-<div class="hint">
-PULL → AIM → RELEASE → MAKE IT HAPPEN ♡
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
-<!-- FINAL -->
+<!-- =========================================
+     ARROW GAME
+========================================= -->
 
-<section class="screen hidden final" id="final">
+<section
+    class="screen hidden"
+    id="game">
 
-<div class="content finalContent">
+    <div class="content">
 
-<div class="label">
-TODAY IS ALL ABOUT YOU
-</div>
+        <div class="gameCard">
 
-<h1>
-HAPPY BIRTHDAY
-</h1>
+            <div class="gameTitle">
+                Let's Begin... ♡
+            </div>
 
-<div class="finalHeart">
+            <div class="instruction">
+                Drag the arrow towards the heart
+            </div>
 
-<div class="heartBox">
+            <div class="arrowArea">
 
-<div class="heart">
+                <div class="track"></div>
 
-<div class="heartText">
-ASSAR ❤️
-</div>
+                <div
+                    class="dragArrow"
+                    id="arrow">
 
-</div>
+                    🏹
 
-</div>
+                </div>
 
-</div>
+                <div class="target">
 
-<div class="script">
-Assar Imam
-</div>
+                    <div class="ring"></div>
 
-<div class="wish">
+                    <div class="ring ring2"></div>
 
-<p>
+                    <div class="targetHeart">
+                        ❤️
+                    </div>
 
-May your life always be filled with
-<strong>happiness, success, love</strong>
-and endless beautiful moments.
+                </div>
 
-<br><br>
+            </div>
 
-You deserve all the good things
-in this world.
+            <div class="hint">
+                PULL → AIM → RELEASE → MAKE IT HAPPEN ♡
+            </div>
 
-<br><br>
+        </div>
 
-<strong>
-Stay Amazing Always ❤️
-</strong>
+    </div>
 
-</p>
+</section>
 
-</div>
 
-<div class="bottom">
-🎂 Here's to an incredible year ahead 🎂
-</div>
+<!-- =========================================
+     FINAL BIRTHDAY SCREEN
+========================================= -->
 
-</div>
+<section
+    class="screen hidden final"
+    id="final">
+
+    <div class="content finalContent">
+
+        <div class="label">
+            TODAY IS ALL ABOUT YOU
+        </div>
+
+        <h1>
+            HAPPY BIRTHDAY
+        </h1>
+
+
+        <div class="finalHeart">
+
+            <div class="heartBox">
+
+                <div class="heart">
+
+                    <div class="heartText">
+                        ASSAR ❤️
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="script">
+            Assar Imam
+        </div>
+
+
+        <div class="wish">
+
+            <p>
+
+                May your life always be filled with
+                <strong>happiness, success, love</strong>
+                and endless beautiful moments.
+
+                <br><br>
+
+                You deserve all the good things
+                in this world.
+
+                <br><br>
+
+                <strong>
+                    Stay Amazing Always ❤️
+                </strong>
+
+            </p>
+
+        </div>
+
+
+        <div class="bottom">
+            🎂 Here's to an incredible year ahead 🎂
+        </div>
+
+    </div>
 
 </section>
 
 
 <script>
 
-/* MUSIC */
+/* =========================================
+   MUSIC SETUP
+========================================= */
 
-const music=document.getElementById("music");
-const musicBtn=document.getElementById("musicBtn");
+const music =
+    document.getElementById("music");
+
+const musicBtn =
+    document.getElementById("musicBtn");
+
+const musicStatus =
+    document.getElementById("musicStatus");
+
+let musicStarted = false;
+
+
+/*
+   IMPORTANT:
+   GitHub file name is:
+
+   birthday.mp3 .mp3
+
+   Space is represented by %20
+*/
+
+const musicFile =
+    "birthday.mp3%20.mp3";
+
+
+/* Set exact audio source */
+
+music.src = musicFile;
+
+
+/* =========================================
+   START WEBSITE + MUSIC
+========================================= */
 
 function begin(){
 
-document.getElementById("start")
-.classList.add("hidden");
+    /* Change screen */
 
-document.getElementById("game")
-.classList.remove("hidden");
+    document
+        .getElementById("start")
+        .classList
+        .add("hidden");
 
-music.volume=.75;
+    document
+        .getElementById("game")
+        .classList
+        .remove("hidden");
 
-music.play().catch(()=>{
-console.log("Music could not start");
-});
+
+    /* Start music after user's tap */
+
+    music.volume = 0.8;
+
+    music.currentTime = 0;
+
+    const playPromise =
+        music.play();
+
+
+    if(playPromise !== undefined){
+
+        playPromise
+        .then(function(){
+
+            musicStarted = true;
+
+            musicBtn.innerHTML = "♫";
+
+            showMusicStatus("MUSIC ON ❤️");
+
+        })
+        .catch(function(error){
+
+            console.log(
+                "Music error:",
+                error
+            );
+
+            showMusicStatus(
+                "Tap ♫ for music"
+            );
+
+        });
+
+    }
 
 }
+
+
+/* =========================================
+   MUSIC BUTTON
+========================================= */
 
 function toggleMusic(){
 
-if(music.paused){
+    if(music.paused){
 
-music.play();
-musicBtn.innerHTML="♫";
+        music.play()
+        .then(function(){
 
-}else{
+            musicStarted = true;
 
-music.pause();
-musicBtn.innerHTML="🔇";
+            musicBtn.innerHTML = "♫";
 
-}
+            showMusicStatus(
+                "MUSIC ON ❤️"
+            );
 
-}
+        })
+        .catch(function(error){
 
+            console.log(
+                "Music could not start:",
+                error
+            );
 
-/* ARROW */
+            showMusicStatus(
+                "Music file could not load"
+            );
 
-const arrow=document.getElementById("arrow");
-const area=document.querySelector(".arrowArea");
+        });
 
-let dragging=false;
-let finished=false;
+    }
+    else{
 
-arrow.addEventListener("pointerdown",e=>{
+        music.pause();
 
-if(finished)return;
+        musicBtn.innerHTML = "🔇";
 
-dragging=true;
+        showMusicStatus(
+            "MUSIC OFF"
+        );
 
-arrow.setPointerCapture(e.pointerId);
-
-});
-
-arrow.addEventListener("pointermove",e=>{
-
-if(!dragging || finished)return;
-
-const rect=area.getBoundingClientRect();
-
-let x=e.clientX-rect.left-35;
-
-const min=5;
-const max=rect.width-85;
-
-x=Math.max(min,Math.min(x,max));
-
-arrow.style.left=x+"px";
-
-if(x>=max-5){
-
-finished=true;
-dragging=false;
-
-arrow.style.left=max+"px";
-
-setTimeout(showBirthday,500);
+    }
 
 }
 
-});
 
-arrow.addEventListener("pointerup",()=>{
+/* =========================================
+   MUSIC STATUS
+========================================= */
 
-dragging=false;
+let statusTimer;
 
-});
+function showMusicStatus(text){
+
+    musicStatus.innerHTML = text;
+
+    musicStatus.classList.add("show");
+
+    clearTimeout(statusTimer);
+
+    statusTimer =
+        setTimeout(function(){
+
+            musicStatus.classList.remove("show");
+
+        },2000);
+
+}
 
 
-/* BIRTHDAY */
+/* =========================================
+   ARROW DRAG
+========================================= */
+
+const arrow =
+    document.getElementById("arrow");
+
+const area =
+    document.querySelector(".arrowArea");
+
+let dragging = false;
+let finished = false;
+
+
+arrow.addEventListener(
+    "pointerdown",
+    function(e){
+
+        if(finished) return;
+
+        dragging = true;
+
+        arrow.setPointerCapture(
+            e.pointerId
+        );
+
+    }
+);
+
+
+arrow.addEventListener(
+    "pointermove",
+    function(e){
+
+        if(!dragging || finished)
+            return;
+
+
+        const rect =
+            area.getBoundingClientRect();
+
+
+        let x =
+            e.clientX -
+            rect.left -
+            35;
+
+
+        const min = 5;
+
+        const max =
+            rect.width - 85;
+
+
+        x =
+            Math.max(
+                min,
+                Math.min(x,max)
+            );
+
+
+        arrow.style.left =
+            x + "px";
+
+
+        /* Arrow reached heart */
+
+        if(x >= max - 5){
+
+            finished = true;
+
+            dragging = false;
+
+            arrow.style.left =
+                max + "px";
+
+
+            setTimeout(
+                showBirthday,
+                500
+            );
+
+        }
+
+    }
+);
+
+
+arrow.addEventListener(
+    "pointerup",
+    function(){
+
+        dragging = false;
+
+    }
+);
+
+
+/* =========================================
+   BIRTHDAY REVEAL
+========================================= */
 
 function showBirthday(){
 
-document.getElementById("game")
-.classList.add("hidden");
+    document
+        .getElementById("game")
+        .classList
+        .add("hidden");
 
-document.getElementById("final")
-.classList.remove("hidden");
 
-createFloating();
+    document
+        .getElementById("final")
+        .classList
+        .remove("hidden");
 
-setTimeout(()=>{
-fireworks();
-},300);
+
+    createFloating();
+
+
+    setTimeout(
+        fireworks,
+        300
+    );
 
 }
 
 
-/* FLOATING HEARTS */
+/* =========================================
+   FLOATING HEARTS
+========================================= */
 
 function createFloating(){
 
-const container=
-document.getElementById("floating");
+    const container =
+        document.getElementById("floating");
 
-const symbols=[
-"♡","♥","✦","✧","❤"
-];
 
-for(let i=0;i<25;i++){
+    const symbols = [
+        "♡",
+        "♥",
+        "✦",
+        "✧",
+        "❤"
+    ];
 
-const el=
-document.createElement("div");
 
-el.className="float";
+    for(let i=0;i<25;i++){
 
-el.innerHTML=
-symbols[
-Math.floor(
-Math.random()*symbols.length
-)
-];
+        const el =
+            document.createElement("div");
 
-el.style.left=
-Math.random()*100+"%";
 
-el.style.fontSize=
-(10+Math.random()*20)+"px";
+        el.className =
+            "float";
 
-el.style.animationDuration=
-(6+Math.random()*9)+"s";
 
-el.style.animationDelay=
-Math.random()*6+"s";
+        el.innerHTML =
+            symbols[
+                Math.floor(
+                    Math.random() *
+                    symbols.length
+                )
+            ];
 
-container.appendChild(el);
+
+        el.style.left =
+            Math.random() *
+            100 + "%";
+
+
+        el.style.fontSize =
+            (10 +
+            Math.random() * 20) +
+            "px";
+
+
+        el.style.animationDuration =
+            (6 +
+            Math.random() * 9) +
+            "s";
+
+
+        el.style.animationDelay =
+            Math.random() * 6 +
+            "s";
+
+
+        container.appendChild(el);
+
+    }
 
 }
 
-}
+
+/* =========================================
+   FIREWORKS
+========================================= */
+
+const canvas =
+    document.getElementById(
+        "fireworks"
+    );
+
+const ctx =
+    canvas.getContext("2d");
 
 
-/* FIREWORKS */
+let particles = [];
 
-const canvas=
-document.getElementById("fireworks");
-
-const ctx=
-canvas.getContext("2d");
-
-let particles=[];
 
 function resize(){
 
-canvas.width=window.innerWidth;
-canvas.height=window.innerHeight;
+    canvas.width =
+        window.innerWidth;
+
+    canvas.height =
+        window.innerHeight;
 
 }
+
 
 resize();
 
-window.addEventListener("resize",resize);
 
-const colors=[
-"#ff176f",
-"#ff72ae",
-"#ffffff",
-"#b56cff",
-"#63d9ff",
-"#ffd166"
+window.addEventListener(
+    "resize",
+    resize
+);
+
+
+const colors = [
+
+    "#ff176f",
+    "#ff72ae",
+    "#ffffff",
+    "#b56cff",
+    "#63d9ff",
+    "#ffd166"
+
 ];
+
 
 function createFirework(){
 
-const x=
-Math.random()*canvas.width;
+    const x =
+        Math.random() *
+        canvas.width;
 
-const y=
-70+
-Math.random()*canvas.height*.45;
 
-const color=
-colors[
-Math.floor(
-Math.random()*colors.length
-)
-];
+    const y =
+        70 +
+        Math.random() *
+        canvas.height *
+        .45;
 
-for(let i=0;i<75;i++){
 
-const angle=
-Math.random()*Math.PI*2;
+    const color =
+        colors[
+            Math.floor(
+                Math.random() *
+                colors.length
+            )
+        ];
 
-const speed=
-Math.random()*7+2;
 
-particles.push({
+    for(
+        let i=0;
+        i<75;
+        i++
+    ){
 
-x:x,
-y:y,
+        const angle =
+            Math.random() *
+            Math.PI *
+            2;
 
-vx:
-Math.cos(angle)*speed,
 
-vy:
-Math.sin(angle)*speed,
+        const speed =
+            Math.random() *
+            7 + 2;
 
-life:100,
 
-size:
-Math.random()*2.5+1,
+        particles.push({
 
-color:color
+            x:x,
+            y:y,
 
-});
+            vx:
+                Math.cos(angle) *
+                speed,
+
+            vy:
+                Math.sin(angle) *
+                speed,
+
+            life:100,
+
+            size:
+                Math.random() *
+                2.5 + 1,
+
+            color:color
+
+        });
+
+    }
 
 }
 
-}
 
 function animate(){
 
-ctx.clearRect(
-0,
-0,
-canvas.width,
-canvas.height
-);
+    ctx.clearRect(
+        0,
+        0,
+        canvas.width,
+        canvas.height
+    );
 
-for(let i=particles.length-1;i>=0;i--){
 
-const p=particles[i];
+    for(
+        let i=particles.length-1;
+        i>=0;
+        i--
+    ){
 
-p.x+=p.vx;
-p.y+=p.vy;
+        const p =
+            particles[i];
 
-p.vx*=.985;
-p.vy*=.985;
 
-p.vy+=.045;
+        p.x += p.vx;
 
-p.life--;
+        p.y += p.vy;
 
-ctx.globalAlpha=
-p.life/100;
 
-ctx.beginPath();
+        p.vx *= .985;
 
-ctx.arc(
-p.x,
-p.y,
-p.size,
-0,
-Math.PI*2
-);
+        p.vy *= .985;
 
-ctx.fillStyle=p.color;
 
-ctx.shadowBlur=15;
-ctx.shadowColor=p.color;
+        p.vy += .045;
 
-ctx.fill();
 
-if(p.life<=0){
+        p.life--;
 
-particles.splice(i,1);
+
+        ctx.globalAlpha =
+            p.life / 100;
+
+
+        ctx.beginPath();
+
+
+        ctx.arc(
+            p.x,
+            p.y,
+            p.size,
+            0,
+            Math.PI * 2
+        );
+
+
+        ctx.fillStyle =
+            p.color;
+
+
+        ctx.shadowBlur = 15;
+
+        ctx.shadowColor =
+            p.color;
+
+
+        ctx.fill();
+
+
+        if(p.life <= 0){
+
+            particles.splice(
+                i,
+                1
+            );
+
+        }
+
+    }
+
+
+    ctx.globalAlpha = 1;
+
+
+    requestAnimationFrame(
+        animate
+    );
 
 }
 
-}
-
-ctx.globalAlpha=1;
-
-requestAnimationFrame(animate);
-
-}
 
 function fireworks(){
 
-animate();
+    animate();
 
-createFirework();
 
-setInterval(()=>{
+    createFirework();
 
-createFirework();
 
-setTimeout(
-createFirework,
-400
-);
+    setInterval(
+        function(){
 
-},1200);
+            createFirework();
+
+            setTimeout(
+                createFirework,
+                400
+            );
+
+        },
+        1200
+    );
 
 }
 
 
-/* INITIAL FLOATING EFFECT */
+/* =========================================
+   INITIAL FLOATING EFFECT
+========================================= */
 
 createFloating();
 
